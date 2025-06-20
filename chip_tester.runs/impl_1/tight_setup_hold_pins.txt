@@ -1,0 +1,14 @@
++====================+====================+============================================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                                        |
++====================+====================+============================================+
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/bit_reg_reg/D           |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | VALUES/TEST_GENERATOR/bit_reg_reg/D        |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[0]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[1]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[2]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[3]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[4]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[5]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/ERROR_CHECK/p_errors_reg_reg[6]/D   |
+| sys_clk_pin        | clk_out1_clk_wiz_0 | VALUES/TEST_GENERATOR/clk_gen_sync_1_reg/D |
++--------------------+--------------------+--------------------------------------------+

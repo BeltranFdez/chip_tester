@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/beltf/Desktop/TFG_todo/Codigo/TFG/chip_tester/chip_tester.srcs/sources_1/new/VALUES_V4_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VALUES_V4_test'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/beltf/Desktop/TFG_todo/Codigo/TFG/chip_tester/chip_tester.srcs/sources_1/new/conv_2_ascii_v2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'conv_2_ascii_v2'

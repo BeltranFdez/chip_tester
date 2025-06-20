@@ -1,0 +1,102 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Jun 19 16:54:03 2025
+| Host         : Omen_16-xd running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CHIP_SYNTH_V1_control_sets_placed.rpt
+| Design       : CHIP_SYNTH_V1
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    89 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    18 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            9 |
+| No           | No                    | Yes                    |              87 |           31 |
+| No           | Yes                   | No                     |             139 |           39 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              41 |           16 |
+| Yes          | Yes                   | No                     |             160 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |                Enable Signal                |                 Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+---------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|  CLK100MHZ_IBUF_BUFG          | VALUES/TEST_GENERATOR/clk_gen_falling_edge  | VALUES/ERROR_CHECK/SR[0]                        |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG          |                                             |                                                 |                2 |              2 |         1.00 |
+|  clk_en                       |                                             |                                                 |                3 |              5 |         1.67 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             |                                                 |                4 |              5 |         1.25 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/MEM/E[0]                             | VALUES/ERROR_CHECK/SR[0]                        |                7 |              7 |         1.00 |
+|  VALUES/CLK_WIZ/inst/clk_out1 | VALUES/MEM/ch_out[6]_i_1_n_0                | VALUES/DEBOUNCER_BTNs/AR[0]                     |                5 |              7 |         1.40 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/SEG7_TO_DISPLAYER/clear                  |                4 |             16 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/TEST_GENERATOR/n_chains_count_reg    | VALUES/ERROR_CHECK/SR[0]                        |                5 |             17 |         3.40 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/TEST_GENERATOR/n_chains_count_reg_0  | VALUES/ERROR_CHECK/SR[0]                        |                5 |             17 |         3.40 |
+|  VALUES/CLK_WIZ/inst/clk_out1 | VALUES/MEM/n_chains_out[16]_i_1_n_0         | VALUES/DEBOUNCER_BTNs/AR[0]                     |                6 |             17 |         2.83 |
+|  VALUES/CLK_WIZ/inst/clk_out1 | VALUES/MEM/freq_div_out[16]_i_1_n_0         | VALUES/DEBOUNCER_BTNs/AR[0]                     |                5 |             17 |         3.40 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/BTNR_count[17]_i_1_n_0    |                4 |             18 |         4.50 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/p_0_in                    |                5 |             18 |         3.60 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/BTNC_count[17]_i_1_n_0    |                5 |             18 |         3.60 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/BTND_count[17]_i_1_n_0    |                4 |             18 |         4.50 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/BTNL_count[17]_i_1_n_0    |                4 |             18 |         4.50 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/BLINKER/clear                            |                6 |             23 |         3.83 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/ERROR_CHECK/num_errors_reg           | VALUES/ERROR_CHECK/SR[0]                        |                6 |             24 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG          |                                             | VALUES/ERROR_CHECK/SR[0]                        |               12 |             27 |         2.25 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/ERROR_CHECK/count_100_reg            | VALUES/ERROR_CHECK/count_100_reg[31]_i_1__0_n_0 |                8 |             31 |         3.88 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/TEST_GENERATOR/count_100_reg         | VALUES/TEST_GENERATOR/count_100_reg[31]_i_1_n_0 |                8 |             31 |         3.88 |
+|  CLK100MHZ_IBUF_BUFG          | VALUES/TEST_GENERATOR/count_start_check_reg | VALUES/ERROR_CHECK/SR[0]                        |                8 |             32 |         4.00 |
+|  clk_en                       |                                             | CHIP/REGISTER_4/count_reg[0]_i_2__0_n_0         |                8 |             32 |         4.00 |
+|  VALUES/CLK_WIZ/inst/clk_out1 |                                             | VALUES/DEBOUNCER_BTNs/AR[0]                     |               18 |             38 |         2.11 |
++-------------------------------+---------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+
+

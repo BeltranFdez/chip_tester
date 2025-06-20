@@ -1,0 +1,25 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../chip_tester.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" \
+"../../../../chip_tester.srcs/sources_1/new/dictionary.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/ASCII_2_7seg.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/CHIP_SIM_V2.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/VALUES_V4_test.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/blinker_v3.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/control_config_v3.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/conv_2_ascii_v2.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/debounce_btn_4_testing.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/displayer_7seg.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/error_counter_v2.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/gen_freq_v2.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/mem_decod_v1.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/mem_v4.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/reg.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/reg_error_synth.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/test_chip.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/test_gen_v3.vhd" \
+"../../../../chip_tester.srcs/sources_1/new/value_cod_v3.vhd" \
+"../../../../chip_tester.srcs/sim_1/new/CHIP_SIM3_tb.vhd" \
+
+# Do not sort compile order
+nosort
