@@ -29,7 +29,7 @@ In this system, the user is able to introduce different conditions under which t
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/yourrepository.git
+    git clone https://github.com/BeltranFdez/chip_tester.git
     ```
 
 2. **Open the project:** Import the project into your synthesis environment (Xilinx Vivado).
